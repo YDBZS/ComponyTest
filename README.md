@@ -4,7 +4,7 @@
 
 [源码地址 - 当前页面打开](https://github.com/YDBZS/ComponyTest)
 
-<a href="https://github.com/YDBZS/ComponyTest">源码地址 - 新页面打开</a>
+<a href="https://github.com/YDBZS/ComponyTest" target="_blank">源码地址 - 新页面打开</a>
 
 ```
     public static void main(String[] args){
