@@ -1,6 +1,8 @@
 package com.example.controller;
 
 import com.example.service.FileService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,14 +17,20 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Controller
 @RequestMapping("/file")
+@Api(value = "文件上传接口", tags = {"文件上传接口"})
 public class FIleController {
 
     @Autowired
     private FileService fileService;
 
     @RequestMapping("/upload")
+    @ApiOperation(value = "文件上传格式校验", produces = "v1.0")
     public void upload(@RequestParam MultipartFile file){
         fileService.upload(file);
     }
+
+
+    public
+
 
 }

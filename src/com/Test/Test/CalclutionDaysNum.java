@@ -1,4 +1,4 @@
-package com.Test;
+package com.Test.Test;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -18,6 +18,5 @@ public class CalclutionDaysNum {
         long thirtyDaysLater = LocalDateTime.ofInstant(Instant.ofEpochMilli(System.currentTimeMillis()), ZoneId.systemDefault()).plusDays(30L).toEpochSecond(ZoneOffset.ofHours(0));
         long l1 = thirtyDaysLater / (60 * 60 * 24);
         System.out.println(l1 - l);
-
     }
 }

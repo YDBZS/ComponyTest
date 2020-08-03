@@ -1,4 +1,4 @@
-package com.Test;
+package com.Test.Test;
 
 /**
  * 测试
